@@ -17,7 +17,7 @@ function App() {
 
   useEffect(() => {
     axios
-      .get('https://simple-site-zpgs.onrender.com')
+      .get('https://simple-site-zpgs.onrender.com/api/data')
       .then((response) => {
         const data = response.data;
         const categorized = data.reduce((acc, item) => {
